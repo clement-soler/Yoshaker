@@ -42,6 +42,7 @@
 		8C9497E21E008CDD0091D67B /* Background-Yoshaker-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-Yoshaker-Bubble.png"; path = "../../Downloads/drive-download-20161213T200440Z/Background-Yoshaker-Bubble.png"; sourceTree = "<group>"; };
 		8C9497E51E009ACC0091D67B /* user.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user.jpeg; path = ../user.jpeg; sourceTree = "<group>"; };
 		8C9497E71E00A7940091D67B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C9497E91E00B2960091D67B /* CocktailApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocktailApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		8C3C9C881DFE9FCC0045A6B5 /* CocktailApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C9497E91E00B2960091D67B /* CocktailApp.entitlements */,
 				8C9497DF1E008C4C0091D67B /* Assets */,
 				8C3C9C891DFE9FCC0045A6B5 /* AppDelegate.swift */,
 				8C3C9C8D1DFE9FCC0045A6B5 /* Main.storyboard */,
@@ -170,7 +172,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -392,6 +394,7 @@
 			baseConfigurationReference = 2E52F634D8100FEF10036094 /* Pods-CocktailApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CocktailApp/CocktailApp.entitlements;
 				DEVELOPMENT_TEAM = 2UY83YCAA6;
 				INFOPLIST_FILE = CocktailApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -406,6 +409,7 @@
 			baseConfigurationReference = 09F7195C539ECBD5BDFAE93A /* Pods-CocktailApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CocktailApp/CocktailApp.entitlements;
 				DEVELOPMENT_TEAM = 2UY83YCAA6;
 				INFOPLIST_FILE = CocktailApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

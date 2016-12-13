@@ -197,15 +197,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pA-B1-qY7">
-                                <rect key="frame" x="65" y="131" width="245" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="245" id="KYD-8y-Eml"/>
-                                    <constraint firstAttribute="height" constant="30" id="vJk-4C-edS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUO-iQ-Suz">
                                 <rect key="frame" x="137" y="249" width="100" height="45"/>
                                 <constraints>
@@ -216,6 +207,9 @@
                                     <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="YOa-wa-pay" eventType="touchUpInside" id="33Z-co-VmC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiM-nA-WpV">
                                 <rect key="frame" x="109" y="302" width="158" height="33"/>
@@ -236,22 +230,23 @@
                         <color key="backgroundColor" red="0.77647058820000003" green="0.8980392157" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D6d-pt-LHU" firstAttribute="top" secondItem="MmU-9c-QJw" secondAttribute="bottom" constant="58" id="0Ir-bJ-ww5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6pA-B1-qY7" secondAttribute="trailing" constant="49" id="23z-pr-bmF"/>
                             <constraint firstItem="wUO-iQ-Suz" firstAttribute="leading" secondItem="q4J-y5-Asy" secondAttribute="leadingMargin" constant="121" id="2pe-s0-eUr"/>
+                            <constraint firstItem="gU6-Xl-0c9" firstAttribute="top" secondItem="D6d-pt-LHU" secondAttribute="bottom" constant="73" id="3RH-Cp-R9w"/>
                             <constraint firstItem="wUO-iQ-Suz" firstAttribute="top" secondItem="gU6-Xl-0c9" secondAttribute="bottom" constant="38" id="5HB-ut-AHl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gU6-Xl-0c9" secondAttribute="trailing" constant="49" id="JGX-fP-YkB"/>
                             <constraint firstItem="PiM-nA-WpV" firstAttribute="top" secondItem="wUO-iQ-Suz" secondAttribute="bottom" constant="8" id="JQa-UC-Zk4"/>
                             <constraint firstItem="PiM-nA-WpV" firstAttribute="leading" secondItem="q4J-y5-Asy" secondAttribute="leadingMargin" constant="93" id="Tzf-qP-Mq0"/>
                             <constraint firstItem="gU6-Xl-0c9" firstAttribute="leading" secondItem="q4J-y5-Asy" secondAttribute="leadingMargin" constant="49" id="aqz-u2-B4Z"/>
-                            <constraint firstItem="gU6-Xl-0c9" firstAttribute="top" secondItem="6pA-B1-qY7" secondAttribute="bottom" constant="20" id="dFB-Wl-KVn"/>
-                            <constraint firstItem="6pA-B1-qY7" firstAttribute="leading" secondItem="q4J-y5-Asy" secondAttribute="leadingMargin" constant="49" id="eRU-gv-90e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PiM-nA-WpV" secondAttribute="trailing" constant="94" id="fKr-ia-zWp"/>
-                            <constraint firstItem="6pA-B1-qY7" firstAttribute="top" secondItem="D6d-pt-LHU" secondAttribute="bottom" constant="23" id="qTv-VO-x4t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D6d-pt-LHU" secondAttribute="trailing" constant="49" id="vLd-pO-B8r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wUO-iQ-Suz" secondAttribute="trailing" constant="122" id="wu6-mv-ZvO"/>
                             <constraint firstItem="D6d-pt-LHU" firstAttribute="leading" secondItem="q4J-y5-Asy" secondAttribute="leadingMargin" constant="49" id="yTq-Sf-Ea6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="D6d-pt-LHU" id="Kmf-w7-2th"/>
+                        <outlet property="passwordTextField" destination="gU6-Xl-0c9" id="ISb-gL-LWf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7F-Qk-Gxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +316,6 @@
         <image name="user.jpeg" width="565" height="565"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SXC-dv-woo"/>
+        <segue reference="Pv9-sC-2vR"/>
     </inferredMetricsTieBreakers>
 </document>
