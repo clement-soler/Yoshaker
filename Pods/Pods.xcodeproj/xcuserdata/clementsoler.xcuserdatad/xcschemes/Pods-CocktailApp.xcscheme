@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C3C9C851DFE9FCB0045A6B5"
-               BuildableName = "CocktailApp.app"
-               BlueprintName = "CocktailApp"
-               ReferencedContainer = "container:CocktailApp.xcodeproj">
+               BlueprintIdentifier = "14AB9613C4AF4B99514103848AE3A523"
+               BuildableName = "Pods_CocktailApp.framework"
+               BlueprintName = "Pods-CocktailApp"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C3C9C851DFE9FCB0045A6B5"
-            BuildableName = "CocktailApp.app"
-            BlueprintName = "CocktailApp"
-            ReferencedContainer = "container:CocktailApp.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C3C9C851DFE9FCB0045A6B5"
-            BuildableName = "CocktailApp.app"
-            BlueprintName = "CocktailApp"
-            ReferencedContainer = "container:CocktailApp.xcodeproj">
+            BlueprintIdentifier = "14AB9613C4AF4B99514103848AE3A523"
+            BuildableName = "Pods_CocktailApp.framework"
+            BlueprintName = "Pods-CocktailApp"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C3C9C851DFE9FCB0045A6B5"
-            BuildableName = "CocktailApp.app"
-            BlueprintName = "CocktailApp"
-            ReferencedContainer = "container:CocktailApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
