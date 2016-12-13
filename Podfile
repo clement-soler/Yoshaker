@@ -6,5 +6,7 @@ target 'CocktailApp' do
   use_frameworks!
 
   # Pods for CocktailApp
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   
 end
