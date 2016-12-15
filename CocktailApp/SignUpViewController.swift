@@ -18,6 +18,16 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailTextField.paddingTextField()
+        passwordTextField.paddingTextField()
+        firstnameTextField.paddingTextField()
+        lastnameTextField.paddingTextField()
+        
+        // Do any additional setup after loading the view.
+    }
     
     @IBAction func createAccountAction(_ sender: AnyObject) {
         
@@ -33,30 +43,15 @@ class SignUpViewController: UIViewController {
         Alamofire.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             switch response.result {
             case .success(let value):
-                print("value : \(value)")
-                break
+                let jsonData = JSON(value)
+                print(jsonData)
+                self.performSegue(withIdentifier: "successRegister", sender: nil)
             case .failure(let error):
                 print("error : \(error)")
-
-                break
             }
         }
-    
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-        emailTextField.paddingTextField()
-        passwordTextField.paddingTextField()
-        firstnameTextField.paddingTextField()
-        lastnameTextField.paddingTextField()
-        
-        // Do any additional setup after loading the view.
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 }
+

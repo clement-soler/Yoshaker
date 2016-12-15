@@ -7,17 +7,65 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
-class HomeViewController: UIViewController {
+
+class themeTableViewCell: UITableViewCell{
+    @IBOutlet weak var glassImage: UIImageView!
+    @IBOutlet weak var themeLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+}
+
+class HomeViewController: UITableViewController {
+    
+    var data = ["Birthday", "Father's Day", "Halloween", "Mother's Day", "New year","Thanksgiving", "Valentine's Day", "Wedding", "World's Cup"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
+        
+        
+//        let url = "http://cocktail.api.anthony.sh/en/drinks/theme"
+//        
+//        
+//        Alamofire.request(url, method: .get).responseJSON { (response) in
+//            switch response.result {
+//            case .success(let value):
+//                print("success : \(value)")
+//                
+//                let json = JSON(value)
+//                let themename = json["data"]["theme"].stringValue
+//                print(themename)
+//                
+//            case .failure(let error):
+//                print("error : \(error)")
+//            }
+//        }
+    
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! themeTableViewCell
+        
+        let element = data[indexPath.row]
+        cell.themeLabel?.text = element
+        cell.glassImage?.image = UIImage(named: element)
+        
+        return cell
+    }
+
+    
+    
 }

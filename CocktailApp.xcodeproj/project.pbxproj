@@ -12,14 +12,18 @@
 		8C3C9C8F1DFE9FCC0045A6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C8D1DFE9FCC0045A6B5 /* Main.storyboard */; };
 		8C3C9C911DFE9FCC0045A6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C901DFE9FCC0045A6B5 /* Assets.xcassets */; };
 		8C3C9C941DFE9FCC0045A6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C921DFE9FCC0045A6B5 /* LaunchScreen.storyboard */; };
+		8C5243D61E02214100B9EAD4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5243D51E02214100B9EAD4 /* SearchViewController.swift */; };
 		8C5DA5361E017F5C00C517D2 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DA5351E017F5C00C517D2 /* TextField+Extension.swift */; };
+		8C5DA5411E01A84600C517D2 /* background-profil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DA53D1E01A84600C517D2 /* background-profil.png */; };
+		8C5DA5421E01A84600C517D2 /* Background-Yoshaker-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DA53E1E01A84600C517D2 /* Background-Yoshaker-Bubble.png */; };
+		8C5DA5431E01A84600C517D2 /* Icon-Yoshaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DA53F1E01A84600C517D2 /* Icon-Yoshaker.png */; };
+		8C5DA5441E01A84600C517D2 /* User Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DA5401E01A84600C517D2 /* User Image.png */; };
+		8C5DA5461E01AAA000C517D2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */; };
+		8C5DA5481E01AB8100C517D2 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DA5471E01AB8100C517D2 /* LocalStore.swift */; };
 		8C9497D81E0088450091D67B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497D71E0088450091D67B /* HomeViewController.swift */; };
 		8C9497DA1E0088C30091D67B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497D91E0088C30091D67B /* LoginViewController.swift */; };
 		8C9497DC1E0089C80091D67B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497DB1E0089C80091D67B /* SignUpViewController.swift */; };
 		8C9497DE1E008A0F0091D67B /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */; };
-		8C9497E31E008CDD0091D67B /* Icon-Yoshaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9497E11E008CDD0091D67B /* Icon-Yoshaker.png */; };
-		8C9497E41E008CDD0091D67B /* Background-Yoshaker-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9497E21E008CDD0091D67B /* Background-Yoshaker-Bubble.png */; };
-		8C9497E61E009ACC0091D67B /* user.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9497E51E009ACC0091D67B /* user.jpeg */; };
 		8C9497E81E00A7940091D67B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9497E71E00A7940091D67B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -33,16 +37,20 @@
 		8C3C9C901DFE9FCC0045A6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3C9C931DFE9FCC0045A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C3C9C951DFE9FCC0045A6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5243D51E02214100B9EAD4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8C55C2DE1DFEE22400C2AA5E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/CocktailApp-gqpsalwpxyqffcdiknyaevcfiinn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		8C55C2DF1DFEE22400C2AA5E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/CocktailApp-gqpsalwpxyqffcdiknyaevcfiinn/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		8C5DA5351E017F5C00C517D2 /* TextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		8C5DA53D1E01A84600C517D2 /* background-profil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-profil.png"; path = "images/background-profil.png"; sourceTree = "<group>"; };
+		8C5DA53E1E01A84600C517D2 /* Background-Yoshaker-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-Yoshaker-Bubble.png"; path = "images/Background-Yoshaker-Bubble.png"; sourceTree = "<group>"; };
+		8C5DA53F1E01A84600C517D2 /* Icon-Yoshaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Yoshaker.png"; path = "images/Icon-Yoshaker.png"; sourceTree = "<group>"; };
+		8C5DA5401E01A84600C517D2 /* User Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Image.png"; path = "images/User Image.png"; sourceTree = "<group>"; };
+		8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8C5DA5471E01AB8100C517D2 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		8C9497D71E0088450091D67B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C9497D91E0088C30091D67B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C9497DB1E0089C80091D67B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		8C9497E11E008CDD0091D67B /* Icon-Yoshaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Yoshaker.png"; path = "../../Downloads/drive-download-20161213T200440Z/Icon-Yoshaker.png"; sourceTree = "<group>"; };
-		8C9497E21E008CDD0091D67B /* Background-Yoshaker-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-Yoshaker-Bubble.png"; path = "../../Downloads/drive-download-20161213T200440Z/Background-Yoshaker-Bubble.png"; sourceTree = "<group>"; };
-		8C9497E51E009ACC0091D67B /* user.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user.jpeg; path = ../user.jpeg; sourceTree = "<group>"; };
 		8C9497E71E00A7940091D67B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C9497E91E00B2960091D67B /* CocktailApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocktailApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +118,8 @@
 				8C9497D91E0088C30091D67B /* LoginViewController.swift */,
 				8C9497DB1E0089C80091D67B /* SignUpViewController.swift */,
 				8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */,
+				8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */,
+				8C5243D51E02214100B9EAD4 /* SearchViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5DA5351E017F5C00C517D2 /* TextField+Extension.swift */,
+				8C5DA5471E01AB8100C517D2 /* LocalStore.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -134,9 +145,10 @@
 		8C9497E01E008C5D0091D67B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8C9497E51E009ACC0091D67B /* user.jpeg */,
-				8C9497E11E008CDD0091D67B /* Icon-Yoshaker.png */,
-				8C9497E21E008CDD0091D67B /* Background-Yoshaker-Bubble.png */,
+				8C5DA53D1E01A84600C517D2 /* background-profil.png */,
+				8C5DA53E1E01A84600C517D2 /* Background-Yoshaker-Bubble.png */,
+				8C5DA53F1E01A84600C517D2 /* Icon-Yoshaker.png */,
+				8C5DA5401E01A84600C517D2 /* User Image.png */,
 			);
 			name = Images;
 			path = /Users/clementsoler/Desktop/CocktailApp;
@@ -220,11 +232,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9497E61E009ACC0091D67B /* user.jpeg in Resources */,
-				8C9497E31E008CDD0091D67B /* Icon-Yoshaker.png in Resources */,
+				8C5DA5441E01A84600C517D2 /* User Image.png in Resources */,
 				8C3C9C941DFE9FCC0045A6B5 /* LaunchScreen.storyboard in Resources */,
+				8C5DA5411E01A84600C517D2 /* background-profil.png in Resources */,
 				8C3C9C911DFE9FCC0045A6B5 /* Assets.xcassets in Resources */,
-				8C9497E41E008CDD0091D67B /* Background-Yoshaker-Bubble.png in Resources */,
+				8C5DA5431E01A84600C517D2 /* Icon-Yoshaker.png in Resources */,
+				8C5DA5421E01A84600C517D2 /* Background-Yoshaker-Bubble.png in Resources */,
 				8C3C9C8F1DFE9FCC0045A6B5 /* Main.storyboard in Resources */,
 				8C9497E81E00A7940091D67B /* GoogleService-Info.plist in Resources */,
 			);
@@ -288,7 +301,10 @@
 				8C9497DA1E0088C30091D67B /* LoginViewController.swift in Sources */,
 				8C3C9C8A1DFE9FCC0045A6B5 /* AppDelegate.swift in Sources */,
 				8C9497DE1E008A0F0091D67B /* ResetPasswordViewController.swift in Sources */,
+				8C5243D61E02214100B9EAD4 /* SearchViewController.swift in Sources */,
+				8C5DA5481E01AB8100C517D2 /* LocalStore.swift in Sources */,
 				8C5DA5361E017F5C00C517D2 /* TextField+Extension.swift in Sources */,
+				8C5DA5461E01AAA000C517D2 /* ProfileViewController.swift in Sources */,
 				8C9497DC1E0089C80091D67B /* SignUpViewController.swift in Sources */,
 				8C9497D81E0088450091D67B /* HomeViewController.swift in Sources */,
 			);

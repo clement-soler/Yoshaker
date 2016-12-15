@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SwiftyJSON
 import Alamofire
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailTextField.paddingTextField()
+        passwordTextField.paddingTextField()
+    
+    }
     
     
     @IBAction func loginAccountAction(_ sender: AnyObject) {
@@ -27,28 +36,17 @@ class LoginViewController: UIViewController {
         Alamofire.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             switch response.result {
             case .success(let value):
-                print("value : \(value)")
-                break
+                let jsonData = JSON(value)
+                let userToken = jsonData["data"]["token"].stringValue
+                LocaleStore.setUser(token: userToken)
+                self.performSegue(withIdentifier: "successLogin", sender: nil)
             case .failure(let error):
                 print("error : \(error)")
-                
-                break
             }
         }
         
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        emailTextField.paddingTextField()
-        passwordTextField.paddingTextField()
-    
-    }
+
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
