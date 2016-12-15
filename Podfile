@@ -10,5 +10,6 @@ target 'CocktailApp' do
   pod 'Firebase/Auth'
   pod 'Alamofire', '~> 4.2'
   pod 'SwiftyJSON', '~> 3.1'
+  pod 'Nuke'
   
 end

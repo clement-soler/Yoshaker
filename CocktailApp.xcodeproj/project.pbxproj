@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		81B6BBD6303CF517880F95C4 /* Pods_CocktailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270E9966A2A419F2A49976A2 /* Pods_CocktailApp.framework */; };
 		8C3C9C8A1DFE9FCC0045A6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3C9C891DFE9FCC0045A6B5 /* AppDelegate.swift */; };
-		8C3C9C8F1DFE9FCC0045A6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C8D1DFE9FCC0045A6B5 /* Main.storyboard */; };
 		8C3C9C911DFE9FCC0045A6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C901DFE9FCC0045A6B5 /* Assets.xcassets */; };
 		8C3C9C941DFE9FCC0045A6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C9C921DFE9FCC0045A6B5 /* LaunchScreen.storyboard */; };
 		8C5243D61E02214100B9EAD4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5243D51E02214100B9EAD4 /* SearchViewController.swift */; };
@@ -23,8 +22,11 @@
 		8C9497D81E0088450091D67B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497D71E0088450091D67B /* HomeViewController.swift */; };
 		8C9497DA1E0088C30091D67B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497D91E0088C30091D67B /* LoginViewController.swift */; };
 		8C9497DC1E0089C80091D67B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497DB1E0089C80091D67B /* SignUpViewController.swift */; };
-		8C9497DE1E008A0F0091D67B /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */; };
 		8C9497E81E00A7940091D67B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9497E71E00A7940091D67B /* GoogleService-Info.plist */; };
+		8CA3FEBC1E02E62100C1F239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FEBB1E02E62100C1F239 /* Main.storyboard */; };
+		8CA3FEBE1E02E99A00C1F239 /* barman.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FEBD1E02E99A00C1F239 /* barman.png */; };
+		8CA3FEC01E02EC2C00C1F239 /* BarmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */; };
+		8CA3FEC21E02F4BA00C1F239 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FEC11E02F4BA00C1F239 /* gradient.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,6 @@
 		2E52F634D8100FEF10036094 /* Pods-CocktailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocktailApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocktailApp/Pods-CocktailApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8C3C9C861DFE9FCC0045A6B5 /* CocktailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3C9C891DFE9FCC0045A6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C3C9C8E1DFE9FCC0045A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C3C9C901DFE9FCC0045A6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3C9C931DFE9FCC0045A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C3C9C951DFE9FCC0045A6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +51,12 @@
 		8C9497D71E0088450091D67B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C9497D91E0088C30091D67B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C9497DB1E0089C80091D67B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		8C9497E71E00A7940091D67B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C9497E91E00B2960091D67B /* CocktailApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocktailApp.entitlements; sourceTree = "<group>"; };
+		8CA3FEBB1E02E62100C1F239 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		8CA3FEBD1E02E99A00C1F239 /* barman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barman.png; path = ../barman.png; sourceTree = "<group>"; };
+		8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarmanViewController.swift; sourceTree = "<group>"; };
+		8CA3FEC11E02F4BA00C1F239 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = ../gradient.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,9 @@
 				8C5DA5321E017EBB00C517D2 /* Helpers */,
 				8C5DA5311E01418300C517D2 /* ViewController */,
 				8C9497E91E00B2960091D67B /* CocktailApp.entitlements */,
+				8CA3FEBB1E02E62100C1F239 /* Main.storyboard */,
 				8C9497DF1E008C4C0091D67B /* Assets */,
 				8C3C9C891DFE9FCC0045A6B5 /* AppDelegate.swift */,
-				8C3C9C8D1DFE9FCC0045A6B5 /* Main.storyboard */,
 				8C3C9C901DFE9FCC0045A6B5 /* Assets.xcassets */,
 				8C3C9C921DFE9FCC0045A6B5 /* LaunchScreen.storyboard */,
 				8C3C9C951DFE9FCC0045A6B5 /* Info.plist */,
@@ -117,9 +121,9 @@
 				8C9497D71E0088450091D67B /* HomeViewController.swift */,
 				8C9497D91E0088C30091D67B /* LoginViewController.swift */,
 				8C9497DB1E0089C80091D67B /* SignUpViewController.swift */,
-				8C9497DD1E008A0F0091D67B /* ResetPasswordViewController.swift */,
 				8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */,
 				8C5243D51E02214100B9EAD4 /* SearchViewController.swift */,
+				8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -145,6 +149,8 @@
 		8C9497E01E008C5D0091D67B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8CA3FEC11E02F4BA00C1F239 /* gradient.png */,
+				8CA3FEBD1E02E99A00C1F239 /* barman.png */,
 				8C5DA53D1E01A84600C517D2 /* background-profil.png */,
 				8C5DA53E1E01A84600C517D2 /* Background-Yoshaker-Bubble.png */,
 				8C5DA53F1E01A84600C517D2 /* Icon-Yoshaker.png */,
@@ -234,11 +240,13 @@
 			files = (
 				8C5DA5441E01A84600C517D2 /* User Image.png in Resources */,
 				8C3C9C941DFE9FCC0045A6B5 /* LaunchScreen.storyboard in Resources */,
+				8CA3FEBE1E02E99A00C1F239 /* barman.png in Resources */,
+				8CA3FEC21E02F4BA00C1F239 /* gradient.png in Resources */,
 				8C5DA5411E01A84600C517D2 /* background-profil.png in Resources */,
+				8CA3FEBC1E02E62100C1F239 /* Main.storyboard in Resources */,
 				8C3C9C911DFE9FCC0045A6B5 /* Assets.xcassets in Resources */,
 				8C5DA5431E01A84600C517D2 /* Icon-Yoshaker.png in Resources */,
 				8C5DA5421E01A84600C517D2 /* Background-Yoshaker-Bubble.png in Resources */,
-				8C3C9C8F1DFE9FCC0045A6B5 /* Main.storyboard in Resources */,
 				8C9497E81E00A7940091D67B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,10 +308,10 @@
 			files = (
 				8C9497DA1E0088C30091D67B /* LoginViewController.swift in Sources */,
 				8C3C9C8A1DFE9FCC0045A6B5 /* AppDelegate.swift in Sources */,
-				8C9497DE1E008A0F0091D67B /* ResetPasswordViewController.swift in Sources */,
 				8C5243D61E02214100B9EAD4 /* SearchViewController.swift in Sources */,
 				8C5DA5481E01AB8100C517D2 /* LocalStore.swift in Sources */,
 				8C5DA5361E017F5C00C517D2 /* TextField+Extension.swift in Sources */,
+				8CA3FEC01E02EC2C00C1F239 /* BarmanViewController.swift in Sources */,
 				8C5DA5461E01AAA000C517D2 /* ProfileViewController.swift in Sources */,
 				8C9497DC1E0089C80091D67B /* SignUpViewController.swift in Sources */,
 				8C9497D81E0088450091D67B /* HomeViewController.swift in Sources */,
@@ -313,14 +321,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8C3C9C8D1DFE9FCC0045A6B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C3C9C8E1DFE9FCC0045A6B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C3C9C921DFE9FCC0045A6B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

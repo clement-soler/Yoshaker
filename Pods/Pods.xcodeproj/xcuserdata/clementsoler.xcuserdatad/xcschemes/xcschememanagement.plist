@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Nuke.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CocktailApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>195E9D6F14D1AFCB2CF14529DFA07B5C</key>
+		<key>4621C3F9BE4863F63014320D83FFE6F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C090CD15F1E4BB0CD4484AAC06E6FF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93FFC0A3F0B083D95C55BB14E9AED7F8</key>
+		<key>FA0F5A188F832F231169168C695C011D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
