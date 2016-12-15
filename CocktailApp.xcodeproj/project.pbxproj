@@ -27,6 +27,7 @@
 		8CA3FEBE1E02E99A00C1F239 /* barman.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FEBD1E02E99A00C1F239 /* barman.png */; };
 		8CA3FEC01E02EC2C00C1F239 /* BarmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */; };
 		8CA3FEC21E02F4BA00C1F239 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FEC11E02F4BA00C1F239 /* gradient.png */; };
+		8CA3FEC41E02F80600C1F239 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3FEC31E02F80600C1F239 /* RandomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8C5DA5401E01A84600C517D2 /* User Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Image.png"; path = "images/User Image.png"; sourceTree = "<group>"; };
 		8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8C5DA5471E01AB8100C517D2 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		8C7AE4F31E0313B9002F701B /* CocktailApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocktailApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		8C9497D71E0088450091D67B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C9497D91E0088C30091D67B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C9497DB1E0089C80091D67B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		8CA3FEBD1E02E99A00C1F239 /* barman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barman.png; path = ../barman.png; sourceTree = "<group>"; };
 		8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarmanViewController.swift; sourceTree = "<group>"; };
 		8CA3FEC11E02F4BA00C1F239 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = ../gradient.png; sourceTree = "<group>"; };
+		8CA3FEC31E02F80600C1F239 /* RandomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				8C3C9C871DFE9FCC0045A6B5 /* Products */,
 				68B7CC955F497C9987788A8C /* Pods */,
 				D1A71C08144E28DF46CD28A1 /* Frameworks */,
+				8C7AE4F31E0313B9002F701B /* CocktailApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +128,7 @@
 				8C5DA5451E01AAA000C517D2 /* ProfileViewController.swift */,
 				8C5243D51E02214100B9EAD4 /* SearchViewController.swift */,
 				8CA3FEBF1E02EC2C00C1F239 /* BarmanViewController.swift */,
+				8CA3FEC31E02F80600C1F239 /* RandomViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 					8C3C9C851DFE9FCB0045A6B5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2UY83YCAA6;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -311,6 +317,7 @@
 				8C5243D61E02214100B9EAD4 /* SearchViewController.swift in Sources */,
 				8C5DA5481E01AB8100C517D2 /* LocalStore.swift in Sources */,
 				8C5DA5361E017F5C00C517D2 /* TextField+Extension.swift in Sources */,
+				8CA3FEC41E02F80600C1F239 /* RandomViewController.swift in Sources */,
 				8CA3FEC01E02EC2C00C1F239 /* BarmanViewController.swift in Sources */,
 				8C5DA5461E01AAA000C517D2 /* ProfileViewController.swift in Sources */,
 				8C9497DC1E0089C80091D67B /* SignUpViewController.swift in Sources */,
@@ -430,12 +437,15 @@
 			baseConfigurationReference = 2E52F634D8100FEF10036094 /* Pods-CocktailApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CocktailApp/CocktailApp.entitlements;
 				DEVELOPMENT_TEAM = 2UY83YCAA6;
 				INFOPLIST_FILE = CocktailApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clementsoler.CocktailApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocktailApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -445,12 +455,14 @@
 			baseConfigurationReference = 09F7195C539ECBD5BDFAE93A /* Pods-CocktailApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CocktailApp/CocktailApp.entitlements;
 				DEVELOPMENT_TEAM = 2UY83YCAA6;
 				INFOPLIST_FILE = CocktailApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clementsoler.CocktailApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocktailApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

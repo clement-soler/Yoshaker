@@ -11,5 +11,6 @@ target 'CocktailApp' do
   pod 'Alamofire', '~> 4.2'
   pod 'SwiftyJSON', '~> 3.1'
   pod 'Nuke'
+  pod 'GoogleTagManager', '~> 3.15.2'
   
 end

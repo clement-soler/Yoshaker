@@ -40,6 +40,10 @@ Copyright 2016 Google Inc. All Rights Reserved.
 
 Copyright 2016 Google Inc.
 
+## GoogleAnalytics
+
+Copyright 2016 Google
+
 ## GoogleInterchangeUtilities
 
 Copyright 2015 Google Inc.
@@ -49,6 +53,10 @@ Copyright 2015 Google Inc.
 Copyright 2015 Google Inc.
 
 ## GoogleSymbolUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleTagManager
 
 Copyright 2015 Google Inc.
 
