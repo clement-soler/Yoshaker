@@ -10,14 +10,25 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, TAGContainerOpenerNotifier {
     
     var window: UIWindow?
     
     
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FIRApp.configure()
-
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 203.0/255.0, blue: 138.0/255.0, alpha: 1.0)
+        
+        let GTM = TAGManager.instance()
+        GTM?.logger.setLogLevel(kTAGLoggerLogLevelVerbose)
+        
+        TAGContainerOpener.openContainer(withId: "GTM-TGSG662",  // change the container ID "GTM-PT3L9Z" to yours
+            tagManager: GTM, openType: kTAGOpenTypePreferFresh,
+            timeout: nil,
+            notifier: self)
+        
         return true
     }
     
@@ -45,6 +56,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func containerAvailable(_ container: TAGContainer!) {
+        container.refresh()
     }
     
     

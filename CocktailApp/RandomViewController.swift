@@ -11,22 +11,29 @@ import Alamofire
 import SwiftyJSON
 import Nuke
 
-
-
-
 class RandomViewController: UIViewController {
+    
+    var dataLayer: TAGDataLayer = TAGManager.instance().dataLayer
 
     @IBOutlet weak var themeNameTextField: UILabel!
     @IBOutlet weak var cocktailName: UILabel!
     @IBOutlet weak var cocktailImage: UIImageView!
     @IBOutlet weak var glassType: UILabel!
     @IBOutlet weak var degreeAlcol: UILabel!
-
     @IBOutlet weak var adult: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dataLayer.push(["event": "openScreen", "screenName": "Random Cocktail"]);
+        dataLayer.push(["event": "eventGA", "eventCategory" : "cocktail", "eventAction" : "clickOnCocktail"]);
+        
+        getJSON()
+
+        // Do any additional setup after loading the view.
+    }
+
+    func getJSON(){
         
         let url = "http://cocktail.api.anthony.sh/en/drinks/drinks_random"
         
@@ -66,11 +73,15 @@ class RandomViewController: UIViewController {
                 print("error : \(error)")
             }
         }
-
-        // Do any additional setup after loading the view.
+    
     }
-
-
+    
+    @IBAction func randomButton(_ sender: AnyObject) {
+        getJSON()
+        
+        dataLayer.push(["event": "eventGA", "eventCategory" : "cocktail", "eventAction" : "clickOnRandom"]);
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

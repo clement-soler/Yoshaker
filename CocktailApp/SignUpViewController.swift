@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class SignUpViewController: UIViewController {
     
-
+    var dataLayer: TAGDataLayer = TAGManager.instance().dataLayer
+    
     @IBOutlet weak var firstnameTextField: UITextField!
     @IBOutlet weak var lastnameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,6 +21,8 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataLayer.push(["event": "openScreen", "screenName": "Register"]);
         
         emailTextField.paddingTextField()
         passwordTextField.paddingTextField()
@@ -46,6 +49,9 @@ class SignUpViewController: UIViewController {
                 let jsonData = JSON(value)
                 print(jsonData)
                 self.performSegue(withIdentifier: "successRegister", sender: nil)
+                
+                self.dataLayer.push(["event": "eventGA", "eventCategory" : "user", "eventAction" : "inscription"]);
+                
             case .failure(let error):
                 print("error : \(error)")
             }

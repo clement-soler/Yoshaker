@@ -16,9 +16,15 @@ class themeTableViewCell: UITableViewCell{
     @IBOutlet weak var glassImage: UIImageView!
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
 }
 
 class HomeViewController: UITableViewController {
+    
+    var dataLayer: TAGDataLayer = TAGManager.instance().dataLayer
+    
+   
     
     @IBOutlet weak var NavigationBar: UINavigationItem!
     
@@ -28,6 +34,11 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         dataLayer.push(["event": "openScreen", "screenName": "Home"]);
+        
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
         
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
         // Do any additional setup after loading the view, typically from a nib.
@@ -92,6 +103,20 @@ class HomeViewController: UITableViewController {
         Nuke.loadImage(with: URL(string: glassImage[indexPath.row])!, into: cell.glassImage)
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+        
+            if tableView.indexPathForSelectedRow != nil {
+                
+                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+            
+        }
     }
 
     
